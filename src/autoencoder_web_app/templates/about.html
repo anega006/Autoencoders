@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block title %}ABOUT{% endblock title %}
+
+{% block content %}
+<section id = "section-about" class="jumbotron jumbotron-fluid justify-content-center d-flex">
+	<div class="container text-center">
+		<h2>Autoencoders</h2>
+		<h5>The project aims to implement image denoising, image reconstruction, reverse image search and semantic image segmentation using autoencoders as a simpler version of neural networks.<br>It makes use of libraries such as Keras, Numpy, Matplotlib, Scikit-Learn and OpenCV.<br>Django web framework is used for deploying deep learning models to a web app. Hence, the project combines deep learning skills with practical web development.</h5>
+
+		<h4>Image Denoising</h4>
+		<h6>Dirty Documents dataset from Kaggle is used.</h6>
+
+		<h4>Reverse Image Search</h4>
+		<h6>Fashion dataset from Kaggle is manually filtered and used.</h6>
+
+		<h4>Semantic Segmentation</h4>
+		<h6>Figaro-1K dataset consisting of images of hair and corresponding masks is used.</h6>
+	</div>
+</section>
+{% endblock content %}

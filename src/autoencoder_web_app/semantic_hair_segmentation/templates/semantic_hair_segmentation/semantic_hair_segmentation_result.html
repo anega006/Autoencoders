@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Semantic Hair Segmentation{% endblock title %}
+
+{% block navcontent %}
+	<li class="nav-item"><a class="nav-link float-right" href="{% url 'app3_index' %}"><strong>Back</strong></a></li>
+{% endblock %}
+
+{% block content %}
+<section id="section-app3-result" class="jumbotron jumbotron-fluid justify-content-center d-flex">
+	<div class="row container text-center">
+		<div class="col-md-4 col-sm-4">
+			<h2>Original Image</h2>
+			<img src="{{filePathName}}" alt='{{filePathName}}' width="224" height="224"><br>
+		</div>
+		<div class="col-md-8 col-sm-8">
+			<h2>Predicted Segmentation Map</h2>
+			<img src="{{resultPathName}}" alt='{{resultPathName}}' width="450" height="224">
+		</div>
+	</div>
+</section>
+{% endblock content %}

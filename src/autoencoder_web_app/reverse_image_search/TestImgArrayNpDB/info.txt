@@ -1,0 +1,5 @@
+This directory contains the Test images numpy array for Reverse Image Search.
+
+The test images, from which we will find 5 similar images are stored here in the form of pickle file which contains preprocessed array of images.
+
+Download the file and place it here.

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Denoising Dirty Documents{% endblock title %}
+
+{% block navcontent %}
+	<li class="nav-item"><a class="nav-link float-right" href="{% url 'app1_index' %}"><strong>Back</strong></a></li>
+{% endblock %}
+
+{% block content %}
+<section id="section-app1-result" class="jumbotron jumbotron-fluid justify-content-center d-flex">
+	<div class="row container text-center">
+		<div class="col-md-6 col-sm-6">
+			<h2>Original Image</h2>
+			<img src="{{filePathName}}" alt='{{filePathName}}' width="400" height="340">
+		</div>
+		<div class="col-md-6 col-sm-6">
+			<h2>Predicted Image</h2>
+			<img src="{{resultPathName}}" alt='{{resultPathName}}' width="400" height="340">
+		</div>
+	</div>
+</section>
+{% endblock content %}

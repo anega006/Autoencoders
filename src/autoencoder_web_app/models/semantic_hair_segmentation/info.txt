@@ -1,0 +1,3 @@
+This directory contains the autoencoder model for Semantic Hair Segmentation.
+
+Thus, after obtaining the model, one needs to place that inside this directory.

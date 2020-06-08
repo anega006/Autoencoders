@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+}
+
+#main-body {
+	text-align: justify;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 30px;
+	color: #2d3e50;
+	transition-timing-function: ease;
+	transition-duration: .35s;
+	margin: 0px 0px 0px 0px;
+	padding-bottom: 0px;
+}
+
+#section-home {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#section-about {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-default {
+	background: #202833 !important;
+	border-color: #202833 !important;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	transition: .5s;
+	margin-top: 0px;
+}
+
+.navbar-brand {
+	color: white !important;
+	font-size: 33px !important;
+	font-family: 'Kaushan Script' !important;
+}
+
+.navbar-nav > li > a {
+	color: white !important;
+	font-family: 'PT Sans Narrow';
+	font-weight: bold;
+	font-size: 24px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.jumbotron {
+	background-size: cover;
+	min-height: 75vh;
+}
+
+#section-app1 {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#section-app1 > div {
+	font-size: 22px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#section-app1-result {
+	padding-top: 5px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#section-app1-db {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#section-app2 {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#section-app2 > div {
+	font-size: 22px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#section-app2-result {
+	padding-top: 5px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+#section-app2-db {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#section-app3 {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#section-app3 > div {
+	font-size: 22px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#section-app3-result {
+	padding-top: 5px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#section-app3-db {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+footer {
+	font-size: 20px;
+}
+
+@media screen and (max-width  : 783px) {
+	html,body {
+		overflow-x: hidden;
+	}
+	#section-home > div > a {
+		font-size: 15px;
+	}
+	.navbar-default {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.navbar-brand {
+		font-size: 24px !important;
+	}
+	#section-app1 > div {
+	  	font-size: 15px;
+	}
+	#section-app2 > div {
+	  	font-size: 15px;
+	}
+	#section-app3 > div {
+	  	font-size: 15px;
+	}
+	footer {
+	  	font-size: 10px;
+	}
+}
+
+
+
+
+
+

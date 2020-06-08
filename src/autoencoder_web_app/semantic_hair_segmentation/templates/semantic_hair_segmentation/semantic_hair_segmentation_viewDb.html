@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Semantic Hair Segmentation{% endblock title %}
+
+{% block navcontent %}
+	<li class="nav-item"><a class="nav-link float-right" href="{% url 'app3_index' %}"><strong>Back</strong></a></li>
+{% endblock %}
+
+{% block content %}
+<section id="section-app3-db" class="jumbotron jumbotron-fluid justify-content-center d-flex">
+	<div class="row container text-center">
+		{% for i in listofImgsPath %}
+		<div class="col-md-3 col-sm-4" style="padding: 2px 2px 2px 2px;">
+			<img src="{{i}}" width="224" height="224">
+		</div>
+		{% endfor %}
+	</div>
+</section>
+{% endblock content %}

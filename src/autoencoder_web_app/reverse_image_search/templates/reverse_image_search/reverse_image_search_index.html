@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Reverse Image Search{% endblock title %}
+
+{% block navcontent %}
+	<li class="nav-item"><a class="nav-link float-right" href="viewDb"><strong>View Gallery</strong></a></li>
+{% endblock %}
+
+{% block content %}
+<section id="section-app2" class="jumbotron jumbotron-fluid justify-content-center d-flex">
+	<div class="container text-center">
+		<form method="post" enctype="multipart/form-data" action="similarImage">
+			{% csrf_token %}
+			<label for="fname">Upload Image File Here:&nbsp;</label>
+			<input class="btn btn-lg btn-dark" style="margin: 15px 15px 15px 15px; font-size:12px;" name="filePath" type="file"/><br><br>
+			<input class="btn btn-lg btn-dark" style="margin: 15px 15px 15px 15px; font-size:12px;" type="submit" value="Submit"/><br>
+		</form>	
+	</div>
+</section>
+{% endblock content %}

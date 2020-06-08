@@ -1,0 +1,3 @@
+
+This directory contains a few random images which can be used for uploading and 
+random testing the denoising dirty documents autoencoder (app1).

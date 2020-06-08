@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block title %}HOME{% endblock title %}
+
+{% block navcontent %}
+	<li class="nav-item"><a class="nav-link float-right" href="{% url 'about' %}"><strong>About</strong></a></li>
+{% endblock %}
+
+{% block content %}
+<section id = "section-home" class="jumbotron jumbotron-fluid justify-content-center d-flex">
+	<div class="container text-center">
+		<a href="/denoising_dirty_documents" class="btn btn-lg btn-dark" style="margin: 15px 15px 15px 15px;"><i class="fa fa-android" aria-hidden="true"></i> Denoising dirty documents</a>
+		<a href="/reverse_image_search" class="btn btn-lg btn-dark" style="margin: 15px 15px 15px 15px;"><i class="fa fa-android" aria-hidden="true"></i> Reverse image search</a>
+		<a href="/semantic_hair_segmentation" class="btn btn-lg btn-dark" style="margin: 15px 15px 15px 15px;"><i class="fa fa-android" aria-hidden="true"></i> Semantic Hair Segmentation</a>
+	</div>
+</section>
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Reverse Image Search{% endblock title %}
+
+{% block navcontent %}
+	<li class="nav-item"><a class="nav-link float-right" href="{% url 'app2_index' %}"><strong>Back</strong></a></li>
+{% endblock %}
+
+{% block content %}
+<section id="section-app2-result" class="jumbotron jumbotron-fluid justify-content-center d-flex">
+	<div class="row container text-center">
+		<div class="col-md-12 col-sm-12">
+			<h2>Original Image</h2>
+			<img src="{{filePathName}}" alt='{{filePathName}}' width="180" height="180">
+		</div>
+		<div class="col-md-12 col-sm-12">
+			<h2>Predicted Similar Images</h2>
+			<img src="{{resultPathName}}" alt='{{resultPathName}}'>
+		</div>
+	</div>
+</section>
+{% endblock content %}
